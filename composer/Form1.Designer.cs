@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.FileDialog = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // label1
@@ -99,6 +100,12 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // FileDialog
+            // 
+            this.FileDialog.FileName = "openFileDialog1";
+            this.FileDialog.Filter = "圖片格式|*.bmp;*.png";
+            this.FileDialog.Title = "請選擇一個圖片";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -127,6 +134,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.OpenFileDialog FileDialog;
     }
 }
 
